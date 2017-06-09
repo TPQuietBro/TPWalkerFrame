@@ -42,15 +42,19 @@
     
     [self.label2 left_Margin:20 ToView:self.image];
     [self.label2 top_Margin:10 ToView:self.label1];
-    [self.label2 sizeToFit];
+    [self.label2 setSize:CGSizeMake(30, 30)];
     
 }
 
 - (UILabel *)label2{
     if (!_label2) {
         _label2 = [[UILabel alloc] init];
-        _label2.text = @"我叫xxxx";
-        _label2.textColor = [UIColor purpleColor];
+        _label2.text = @"4";
+        _label2.textAlignment = NSTextAlignmentCenter;
+        _label2.layer.cornerRadius = 15;
+        _label2.layer.masksToBounds = YES;
+        _label2.backgroundColor = [UIColor colorWithRed:255.0/255 green:68.0/255 blue:0/255 alpha:0.5];
+        _label2.textColor = [UIColor redColor];
     }
     return _label2;
 }
