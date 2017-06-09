@@ -15,10 +15,10 @@
 		58C0E1E81EDE69F5005B8A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C0E1E61EDE69F5005B8A0E /* LaunchScreen.storyboard */; };
 		58C0E1F31EDE69F5005B8A0E /* TPFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E1F21EDE69F5005B8A0E /* TPFrameTests.m */; };
 		58C0E1FE1EDE69F5005B8A0E /* TPFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E1FD1EDE69F5005B8A0E /* TPFrameUITests.m */; };
-		58C0E20E1EDE6B0F005B8A0E /* UIView+WalkerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E20D1EDE6B0F005B8A0E /* UIView+WalkerFrame.m */; };
-		58C0E2111EDE6C91005B8A0E /* UIView+TPFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E2101EDE6C91005B8A0E /* UIView+TPFrameExtension.m */; };
 		58DA152A1EE8E2E20043A1C1 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA15291EE8E2E20043A1C1 /* TempViewController.m */; };
 		58DA152D1EE8E5860043A1C1 /* TempCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA152C1EE8E5860043A1C1 /* TempCell.m */; };
+		58DA15331EEA6C190043A1C1 /* UIView+TPFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */; };
+		58DA15341EEA6C190043A1C1 /* UIView+WalkerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +55,14 @@
 		58C0E1F91EDE69F5005B8A0E /* TPFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C0E1FD1EDE69F5005B8A0E /* TPFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFrameUITests.m; sourceTree = "<group>"; };
 		58C0E1FF1EDE69F5005B8A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58C0E20C1EDE6B0F005B8A0E /* UIView+WalkerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WalkerFrame.h"; sourceTree = "<group>"; };
-		58C0E20D1EDE6B0F005B8A0E /* UIView+WalkerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WalkerFrame.m"; sourceTree = "<group>"; };
-		58C0E20F1EDE6C91005B8A0E /* UIView+TPFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TPFrameExtension.h"; sourceTree = "<group>"; };
-		58C0E2101EDE6C91005B8A0E /* UIView+TPFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TPFrameExtension.m"; sourceTree = "<group>"; };
 		58DA15281EE8E2E20043A1C1 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		58DA15291EE8E2E20043A1C1 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
 		58DA152B1EE8E5860043A1C1 /* TempCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempCell.h; sourceTree = "<group>"; };
 		58DA152C1EE8E5860043A1C1 /* TempCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempCell.m; sourceTree = "<group>"; };
+		58DA152F1EEA6C190043A1C1 /* UIView+TPFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TPFrameExtension.h"; sourceTree = "<group>"; };
+		58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TPFrameExtension.m"; sourceTree = "<group>"; };
+		58DA15311EEA6C190043A1C1 /* UIView+WalkerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WalkerFrame.h"; sourceTree = "<group>"; };
+		58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WalkerFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 		58C0E1CC1EDE69F5005B8A0E = {
 			isa = PBXGroup;
 			children = (
+				58DA152E1EEA6C190043A1C1 /* TPWalkerFrame */,
 				58C0E1D71EDE69F5005B8A0E /* TPFrame */,
 				58C0E1F11EDE69F5005B8A0E /* TPFrameTests */,
 				58C0E1FC1EDE69F5005B8A0E /* TPFrameUITests */,
@@ -113,7 +114,6 @@
 		58C0E1D71EDE69F5005B8A0E /* TPFrame */ = {
 			isa = PBXGroup;
 			children = (
-				58C0E20B1EDE6AF7005B8A0E /* TPWalkerFrame */,
 				58C0E1DB1EDE69F5005B8A0E /* AppDelegate.h */,
 				58C0E1DC1EDE69F5005B8A0E /* AppDelegate.m */,
 				58C0E1DE1EDE69F5005B8A0E /* ViewController.h */,
@@ -157,13 +157,13 @@
 			path = TPFrameUITests;
 			sourceTree = "<group>";
 		};
-		58C0E20B1EDE6AF7005B8A0E /* TPWalkerFrame */ = {
+		58DA152E1EEA6C190043A1C1 /* TPWalkerFrame */ = {
 			isa = PBXGroup;
 			children = (
-				58C0E20F1EDE6C91005B8A0E /* UIView+TPFrameExtension.h */,
-				58C0E2101EDE6C91005B8A0E /* UIView+TPFrameExtension.m */,
-				58C0E20C1EDE6B0F005B8A0E /* UIView+WalkerFrame.h */,
-				58C0E20D1EDE6B0F005B8A0E /* UIView+WalkerFrame.m */,
+				58DA152F1EEA6C190043A1C1 /* UIView+TPFrameExtension.h */,
+				58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */,
+				58DA15311EEA6C190043A1C1 /* UIView+WalkerFrame.h */,
+				58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */,
 			);
 			path = TPWalkerFrame;
 			sourceTree = "<group>";
@@ -302,10 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C0E20E1EDE6B0F005B8A0E /* UIView+WalkerFrame.m in Sources */,
+				58DA15331EEA6C190043A1C1 /* UIView+TPFrameExtension.m in Sources */,
+				58DA15341EEA6C190043A1C1 /* UIView+WalkerFrame.m in Sources */,
 				58C0E1E01EDE69F5005B8A0E /* ViewController.m in Sources */,
 				58DA152A1EE8E2E20043A1C1 /* TempViewController.m in Sources */,
-				58C0E2111EDE6C91005B8A0E /* UIView+TPFrameExtension.m in Sources */,
 				58C0E1DD1EDE69F5005B8A0E /* AppDelegate.m in Sources */,
 				58C0E1DA1EDE69F5005B8A0E /* main.m in Sources */,
 				58DA152D1EE8E5860043A1C1 /* TempCell.m in Sources */,
