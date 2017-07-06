@@ -19,6 +19,7 @@
 		58DA152D1EE8E5860043A1C1 /* TempCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA152C1EE8E5860043A1C1 /* TempCell.m */; };
 		58DA15331EEA6C190043A1C1 /* UIView+TPFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */; };
 		58DA15341EEA6C190043A1C1 /* UIView+WalkerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */; };
+		6C3FD7391F0E3C7B00E82FC3 /* TPScreenAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FD7381F0E3C7B00E82FC3 /* TPScreenAdaptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TPFrameExtension.m"; sourceTree = "<group>"; };
 		58DA15311EEA6C190043A1C1 /* UIView+WalkerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WalkerFrame.h"; sourceTree = "<group>"; };
 		58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WalkerFrame.m"; sourceTree = "<group>"; };
+		6C3FD7371F0E3C7B00E82FC3 /* TPScreenAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPScreenAdaptor.h; sourceTree = "<group>"; };
+		6C3FD7381F0E3C7B00E82FC3 /* TPScreenAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPScreenAdaptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 		58DA152E1EEA6C190043A1C1 /* TPWalkerFrame */ = {
 			isa = PBXGroup;
 			children = (
+				6C3FD7371F0E3C7B00E82FC3 /* TPScreenAdaptor.h */,
+				6C3FD7381F0E3C7B00E82FC3 /* TPScreenAdaptor.m */,
 				58DA152F1EEA6C190043A1C1 /* UIView+TPFrameExtension.h */,
 				58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */,
 				58DA15311EEA6C190043A1C1 /* UIView+WalkerFrame.h */,
@@ -305,6 +310,7 @@
 				58DA15331EEA6C190043A1C1 /* UIView+TPFrameExtension.m in Sources */,
 				58DA15341EEA6C190043A1C1 /* UIView+WalkerFrame.m in Sources */,
 				58C0E1E01EDE69F5005B8A0E /* ViewController.m in Sources */,
+				6C3FD7391F0E3C7B00E82FC3 /* TPScreenAdaptor.m in Sources */,
 				58DA152A1EE8E2E20043A1C1 /* TempViewController.m in Sources */,
 				58C0E1DD1EDE69F5005B8A0E /* AppDelegate.m in Sources */,
 				58C0E1DA1EDE69F5005B8A0E /* main.m in Sources */,
