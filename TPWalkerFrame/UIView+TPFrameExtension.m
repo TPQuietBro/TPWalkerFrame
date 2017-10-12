@@ -119,8 +119,5 @@
     return walkerSuperView1;
 }
 
-- (void)setRootSuperView:(UIView *)rootSuperView{
-    
-}
 
 @end

@@ -25,4 +25,13 @@
 - (void)centerY_EqualsView:(UIView *)view;
 //中心X对齐
 - (void)centerX_EqualsView:(UIView *)view;
+
+#pragma mark - 2017-10-12新增
+//在父view内距离两边边框的距离,实际上是算宽度
+- (void)widthConstraintsOffset:(CGFloat)offset toView:(UIView *)view;
+- (void)widthConstraintsOffsetLeft:(CGFloat)offsetLeft offsetRight:(CGFloat)offsetRight toView:(UIView *)view;
+//在父view内距离两边边框的距离,实际上是算高度
+- (void)heightConstraintsOffset:(CGFloat)offset toView:(UIView *)view;
+- (void)heightConstraintsOffsetTop:(CGFloat)offsetTop offsetBottom:(CGFloat)offsetBottom toView:(UIView *)view;
+
 @end

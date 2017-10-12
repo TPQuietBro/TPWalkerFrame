@@ -21,15 +21,18 @@
 #define TP_IS_IPHONE_5 (TP_IS_IPHONE && TP_SCREEN_MAX_LENGTH == 568.0)
 #define TP_IS_IPHONE_6 (TP_IS_IPHONE && TP_SCREEN_MAX_LENGTH == 667.0)
 #define TP_IS_IPHONE_6P (TP_IS_IPHONE && TP_SCREEN_MAX_LENGTH == 736.0)
+#define TP_IS_IPHONE_X (TP_IS_IPHONE && TP_SCREEN_MAX_LENGTH == 812.0)
 
 #define TP_IPHONE_4_HEIGHT_PX 960.0
 #define TP_IPHONE_5_HEIGHT_PX 1136.0
 #define TP_IPHONE_6_HEIGHT_PX 1334.0
 #define TP_IPHONE_6P_HEIGHT_PX 1920.0
+#define TP_IPHONE_X_HEIGHT_PX 2436.0
 
 #define TP_IPHONE_5_WIDTH_PX 640.0
 #define TP_IPHONE_6_WIDTH_PX 750.0
 #define TP_IPHONE_6P_WIDTH_PX 1080.0
+#define TP_IPHONE_X_WIDTH_PX 1125.0
 
 @implementation TPScreenAdaptor
 + (CGFloat)pxWidthWithNumber:(CGFloat)number{
@@ -42,6 +45,8 @@
         width = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
     }else if (TP_IS_IPHONE_6P){
         width = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
+    }else if (TP_IS_IPHONE_X){
+        width = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
     }
     return width;
 }
@@ -53,6 +58,8 @@
     }else if (TP_IS_IPHONE_6){
         height = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
     }else if (TP_IS_IPHONE_6P){
+        height = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
+    }else if (TP_IS_IPHONE_X){
         height = TP_SCREEN_WIDTH / TP_IPHONE_6_WIDTH_PX * number;
     }
     return height;

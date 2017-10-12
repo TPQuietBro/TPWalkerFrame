@@ -74,6 +74,38 @@
     self.centerY = newCenterPoint.y;
 }
 
+- (void)widthConstraintsOffset:(CGFloat)offset toView:(UIView *)view{
+    if (![self isSubView:view]) {
+        NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
+        @throw ex;
+    }
+    self.width = view.width - 2 * offset;
+}
+
+- (void)widthConstraintsOffsetLeft:(CGFloat)offsetLeft offsetRight:(CGFloat)offsetRight toView:(UIView *)view{
+    if (![self isSubView:view]) {
+        NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
+        @throw ex;
+    }
+    self.width = view.width - offsetLeft - offsetRight;
+}
+
+- (void)heightConstraintsOffset:(CGFloat)offset toView:(UIView *)view{
+    if (![self isSubView:view]) {
+        NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
+        @throw ex;
+    }
+    self.height = view.height - 2 * offset;
+}
+
+- (void)heightConstraintsOffsetTop:(CGFloat)offsetTop offsetBottom:(CGFloat)offsetBottom toView:(UIView *)view{
+    if (![self isSubView:view]) {
+        NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
+        @throw ex;
+    }
+    self.height = view.height - offsetTop - offsetBottom;
+}
+
 
 - (CGPoint)newCenterPoint:(UIView *)view{
     
