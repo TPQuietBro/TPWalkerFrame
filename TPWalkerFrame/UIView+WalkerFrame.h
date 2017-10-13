@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+TPFrameExtension.h"
-#import "TPScreenAdaptor.h"
+
 
 @interface UIView (WalkerFrame)
 

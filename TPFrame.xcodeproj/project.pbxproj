@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E19659D1F9065510064612B /* UIButton+TPCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19659C1F9065510064612B /* UIButton+TPCustom.m */; };
 		0E7FE4CE1F8F158500ACED70 /* TPScreenAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7FE4CD1F8F158400ACED70 /* TPScreenAdaptor.m */; };
 		58C0E1DA1EDE69F5005B8A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E1D91EDE69F5005B8A0E /* main.m */; };
 		58C0E1DD1EDE69F5005B8A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C0E1DC1EDE69F5005B8A0E /* AppDelegate.m */; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E19659A1F9063ED0064612B /* TPFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFrame.h; sourceTree = "<group>"; };
+		0E19659B1F9065510064612B /* UIButton+TPCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TPCustom.h"; sourceTree = "<group>"; };
+		0E19659C1F9065510064612B /* UIButton+TPCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TPCustom.m"; sourceTree = "<group>"; };
 		0E7FE4CD1F8F158400ACED70 /* TPScreenAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPScreenAdaptor.m; sourceTree = "<group>"; };
 		58C0E1D51EDE69F5005B8A0E /* TPFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C0E1D91EDE69F5005B8A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -169,6 +173,9 @@
 				58DA15301EEA6C190043A1C1 /* UIView+TPFrameExtension.m */,
 				58DA15311EEA6C190043A1C1 /* UIView+WalkerFrame.h */,
 				58DA15321EEA6C190043A1C1 /* UIView+WalkerFrame.m */,
+				0E19659A1F9063ED0064612B /* TPFrame.h */,
+				0E19659B1F9065510064612B /* UIButton+TPCustom.h */,
+				0E19659C1F9065510064612B /* UIButton+TPCustom.m */,
 			);
 			path = TPWalkerFrame;
 			sourceTree = "<group>";
@@ -315,6 +322,7 @@
 				58C0E1DD1EDE69F5005B8A0E /* AppDelegate.m in Sources */,
 				58C0E1DA1EDE69F5005B8A0E /* main.m in Sources */,
 				58DA152D1EE8E5860043A1C1 /* TempCell.m in Sources */,
+				0E19659D1F9065510064612B /* UIButton+TPCustom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -105,6 +105,10 @@
     return self.frame.origin.y;
 }
 
+- (void)setRootSuperView:(UIView *)rootSuperView{
+    
+}
+
 - (UIView *)rootSuperView{
     UIView *walkerSuperView1 = self.superview;
     //如果没有父类
