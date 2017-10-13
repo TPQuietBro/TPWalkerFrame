@@ -8,4 +8,4 @@
 
 #import "UIView+WalkerFrame.h"
 #import "TPScreenAdaptor.h"
-#import "UIButton+TPCustom.h"
+#import "TPCustomButton.h"

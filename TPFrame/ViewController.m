@@ -23,17 +23,18 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = YES;
     
-    UIButton *button = [[UIButton alloc] init];
-    [button setTitle:@"123" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    TPCustomButton *button1 = [[TPCustomButton alloc] init];
+    [button1 setTitle:@"123" forState:UIControlStateNormal];
+    [button1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    //    [button setImage:[UIImage imageNamed:@"icon_gene_green"] forState:UIControlStateNormal];
+    button1.frame = CGRectMake(100, 200, 100, 60);
+    [self.view addSubview:button1];
     
-    button.imageX(10).imageY(0).imageW(22).imageH(22);
-    button.labelX(10).labelY(22).labelW(50).labelH(28);
+    button1.imageX(10).imageY(0).imageW(22).imageH(22).normalImage(@"icon_gene_green").bgColor([UIColor greenColor]);
+    button1.labelX(10).labelY(22).labelW(50).labelH(28);
     
-    [button setImage:[UIImage imageNamed:@"icon_gene_green"] forState:UIControlStateNormal];
-    button.frame = CGRectMake(100, 200, 100, 60);
-    [self.view addSubview:button];
-    
+    [button1 finishL];
+      
 }
 - (IBAction)jump:(id)sender {
     
@@ -43,10 +44,13 @@
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    NSLog(@"son==%@",NSStringFromCGRect(self.son.frame));
-    NSLog(@"superView==%@",NSStringFromCGRect(self.superView.frame));
-    NSLog(@"other==%@",NSStringFromCGRect(self.other.frame));
+   
     
+    
+//    NSLog(@"son==%@",NSStringFromCGRect(self.son.frame));
+//    NSLog(@"superView==%@",NSStringFromCGRect(self.superView.frame));
+//    NSLog(@"other==%@",NSStringFromCGRect(self.other.frame));
+//    
 //    UIView *tempView = [[UIView alloc] init];
 //    [self.view addSubview:tempView];
 //    tempView.size = CGSizeMake(50, 50);
