@@ -262,10 +262,10 @@ static char *tp_labelHKey = "tp_labelH";
 - (void)finishL{
     self.imageView.frame = CGRectMake(self.tp_imageX, self.tp_imageY, self.tp_imageW, self.tp_imageH);
     
-    NSLog(@"%lf,%lf,%lf,%lf",self.tp_imageX,self.tp_imageY,self.tp_imageW,self.tp_imageH);
+    NSLog(@"self.tp_image-frame:%lf,%lf,%lf,%lf",self.tp_imageX,self.tp_imageY,self.tp_imageW,self.tp_imageH);
     
     self.titleLabel.frame = CGRectMake(self.tp_labelX, self.tp_labelY, self.tp_labelW, self.tp_labelH);
-    NSLog(@"%lf,%lf,%lf,%lf",self.tp_labelX,self.tp_labelY,self.tp_labelW,self.tp_labelH);
+    NSLog(@"self.tp_label-frame:%lf,%lf,%lf,%lf",self.tp_labelX,self.tp_labelY,self.tp_labelW,self.tp_labelH);
 }
 
 

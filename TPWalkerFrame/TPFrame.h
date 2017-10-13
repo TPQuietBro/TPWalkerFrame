@@ -9,3 +9,6 @@
 #import "UIView+WalkerFrame.h"
 #import "TPScreenAdaptor.h"
 #import "TPCustomButton.h"
+#import "TPCustomLabel.h"
+
+
