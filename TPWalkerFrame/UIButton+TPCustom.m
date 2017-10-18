@@ -260,6 +260,11 @@ static char *tp_labelHKey = "tp_labelH";
 }
 
 - (void)finishL{
+    
+    if (self.tp_imageX == 0 || self.tp_labelX == 0) {
+        return;
+    }
+    
     self.imageView.frame = CGRectMake(self.tp_imageX, self.tp_imageY, self.tp_imageW, self.tp_imageH);
     
     NSLog(@"self.tp_image-frame:%lf,%lf,%lf,%lf",self.tp_imageX,self.tp_imageY,self.tp_imageW,self.tp_imageH);
