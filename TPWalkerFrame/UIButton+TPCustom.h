@@ -35,6 +35,10 @@ typedef UIButton *(^blockHighLightTitleColor)(UIColor *titleColor);
 typedef UIButton *(^blockNormalTitleColor)(UIColor *titleColor);
 typedef UIButton *(^blockSelectedTitleColor)(UIColor *titleColor);
 
+typedef UIButton *(^blockCorneradius)(CGFloat corneradius);
+typedef UIButton *(^blockBorderWidth)(CGFloat width);
+typedef UIButton *(^blockBorderColor)(UIColor *color);
+typedef UIButton *(^blockMaskToBounds)(BOOL yes);
 
 @interface UIButton (TPCustom)
 @property(nonatomic,assign) CGFloat tp_imageX;
@@ -78,7 +82,7 @@ typedef UIButton *(^blockSelectedTitleColor)(UIColor *titleColor);
 //选中标题
 - (blockSelectedTitle)selectedTitle;
 //字体
-- (blockButtonFont)Font;
+- (blockButtonFont)titleFont;
 //背景颜色
 - (blockBgColor)bgColor;
 //普通下字体颜色
@@ -87,6 +91,11 @@ typedef UIButton *(^blockSelectedTitleColor)(UIColor *titleColor);
 - (blockSelectedTitleColor)selectedTitleColor;
 //高亮下的字体颜色
 - (blockHighLightTitleColor)highlightTitleColor;
+
+- (blockCorneradius)corneradius;
+- (blockBorderWidth)borderWidth;
+- (blockMaskToBounds)maskToBounds;
+- (blockBorderColor)borderColor;
 
 
 - (void)finishL;

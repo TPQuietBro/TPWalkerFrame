@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+TPFrameExtension.h"
-
-
+#import "TPScreenAdaptor.h"
 @interface UIView (WalkerFrame)
 
 //距离左边的view的间距

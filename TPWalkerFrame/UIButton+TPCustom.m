@@ -215,7 +215,7 @@ static char *tp_labelHKey = "tp_labelH";
     };
 }
 
-- (blockButtonFont)Font{
+- (blockButtonFont)titleFont{
     weak
     return ^UIButton *(id font){
         if ([font isKindOfClass:[UIFont class]]) {
@@ -259,12 +259,39 @@ static char *tp_labelHKey = "tp_labelH";
     };
 }
 
+- (blockCorneradius)corneradius{
+    weak
+    return ^UIButton *(CGFloat corneradius){
+        weakSelf.layer.cornerRadius = corneradius;
+        return self;
+    };
+}
+- (blockBorderWidth)borderWidth{
+    weak
+    return ^UIButton *(CGFloat borderWidth){
+        weakSelf.layer.borderWidth = borderWidth;
+        return self;
+    };
+}
+- (blockMaskToBounds)maskToBounds{
+    weak
+    return ^UIButton *(BOOL yes){
+        weakSelf.layer.masksToBounds = yes;
+        return self;
+    };
+}
+- (blockBorderColor)borderColor{
+    weak
+    return ^UIButton *(UIColor *color){
+        weakSelf.layer.borderColor = color.CGColor;
+        return self;
+    };
+}
+
 - (void)finishL{
-    
     if (self.tp_imageX == 0 || self.tp_labelX == 0) {
         return;
     }
-    
     self.imageView.frame = CGRectMake(self.tp_imageX, self.tp_imageY, self.tp_imageW, self.tp_imageH);
     
     NSLog(@"self.tp_image-frame:%lf,%lf,%lf,%lf",self.tp_imageX,self.tp_imageY,self.tp_imageW,self.tp_imageH);

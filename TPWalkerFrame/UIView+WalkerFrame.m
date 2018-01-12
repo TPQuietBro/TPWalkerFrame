@@ -78,6 +78,7 @@
     if (![self isSubView:view]) {
         NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
         @throw ex;
+        return;
     }
     self.width = view.width - 2 * offset;
 }
@@ -86,6 +87,7 @@
     if (![self isSubView:view]) {
         NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
         @throw ex;
+        return;
     }
     self.width = view.width - offsetLeft - offsetRight;
 }
@@ -94,6 +96,7 @@
     if (![self isSubView:view]) {
         NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
         @throw ex;
+        return;
     }
     self.height = view.height - 2 * offset;
 }
@@ -102,6 +105,7 @@
     if (![self isSubView:view]) {
         NSException *ex = [NSException exceptionWithName:@"current view is not a subview of view" reason:@"please add it into superview" userInfo:nil];
         @throw ex;
+        return;
     }
     self.height = view.height - offsetTop - offsetBottom;
 }
